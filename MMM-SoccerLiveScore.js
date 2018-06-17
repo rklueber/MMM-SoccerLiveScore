@@ -270,6 +270,8 @@ Module.register("MMM-SoccerLiveScore", {
                             team1_score.classList.add('MMM-SoccerLiveScore-red');
                             collon.classList.add('MMM-SoccerLiveScore-red');
                             team2_score.classList.add('MMM-SoccerLiveScore-red');
+                            team1_name.classList.add('MMM-SoccerLiveScore-red');
+                            team2_name.classList.add('MMM-SoccerLiveScore-red');
                         }
 
                         // console.log(activeLeagueStandings[i].matches[j].status, activeLeagueStandings[i].matches[j].team1_name, activeLeagueStandings[i].matches[j].period_time * 1000 - 1529084185000);

@@ -266,14 +266,6 @@ Module.register("MMM-SoccerLiveScore", {
                             match.appendChild(team2_score);                            
                         }
 
-                        if (activeLeagueStandings[i].matches[j].status != 0 && activeLeagueStandings[i].matches[j].status != 100) {
-                            team1_score.classList.add('MMM-SoccerLiveScore-red');
-                            collon.classList.add('MMM-SoccerLiveScore-red');
-                            team2_score.classList.add('MMM-SoccerLiveScore-red');
-                            team1_name.classList.add('MMM-SoccerLiveScore-red');
-                            team2_name.classList.add('MMM-SoccerLiveScore-red');
-                        }
-
                         // console.log(activeLeagueStandings[i].matches[j].status, activeLeagueStandings[i].matches[j].team1_name, activeLeagueStandings[i].matches[j].period_time * 1000 - 1529084185000);
 
                         // if (activeLeagueStandings[i].matches[j].status == 0) {
@@ -301,7 +293,16 @@ Module.register("MMM-SoccerLiveScore", {
                             team2_name.innerHTML = activeLeagueStandings[i].matches[j].team2_name;
                             match.appendChild(team2_name);
                         }
+
                         matches.appendChild(match);
+
+                        if (activeLeagueStandings[i].matches[j].status != 0 && activeLeagueStandings[i].matches[j].status != 100) {
+                            team1_score.classList.add('MMM-SoccerLiveScore-red');
+                            collon.classList.add('MMM-SoccerLiveScore-red');
+                            team2_score.classList.add('MMM-SoccerLiveScore-red');
+                            team1_name.classList.add('MMM-SoccerLiveScore-red');
+                            team2_name.classList.add('MMM-SoccerLiveScore-red');
+                        }
                     }
                 }
             }

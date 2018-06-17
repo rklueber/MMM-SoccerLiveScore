@@ -102,6 +102,7 @@ Module.register("MMM-SoccerLiveScore", {
             wrapper.appendChild(title);
 
             var labelRow = document.createElement("tr");
+            labelRow.className = 'normal';
 
             var position = document.createElement("th");
             labelRow.appendChild(position);
@@ -141,6 +142,7 @@ Module.register("MMM-SoccerLiveScore", {
 
             for (var i = 0; i < table.length; i++) {
                 var place = document.createElement('tr');
+                place.className = 'normal';
 
                 var number = document.createElement('td');
                 number.innerHTML = i + 1;
@@ -209,6 +211,7 @@ Module.register("MMM-SoccerLiveScore", {
                     for (var j = 0; j < activeLeagueStandings[i].matches.length; j++) {
 
                         var match = document.createElement('tr');
+                        match.className = 'normal';
 
                         if (this.config.showNames) {
                             var team1_name = document.createElement('td');
